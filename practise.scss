@@ -1,0 +1,109 @@
+
+// Exercise 1: Interpolation and Mixins for Buttons
+@mixin button-style($font-size, $width, $bg, $name) {
+    .btn-#{$name} {
+      font-size: $font-size;
+      width: $width;
+      background-color: $bg;
+      color: purple;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      border: none;
+      display: inline-block;
+      margin: 5px;
+    }
+  }
+  
+  @include button-style(16px, 150px, #ffc107, "important");
+  @include button-style(14px, 120px, #17a2b8, "secondary");
+  
+  
+ 
+  // Exercise 2: List + nth + Mixin for h6–h10
+
+  $font-sizes: 100%, 110%, 120%, 130%, 140%;
+  
+  @mixin heading-size($level) {
+    font-size: nth($font-sizes, $level - 5);
+  }
+  
+  h6 { @include heading-size(6); }
+  h7 { @include heading-size(7); }
+  h8 { @include heading-size(8); }
+  h9 { @include heading-size(9); }
+  h10 { @include heading-size(10); }
+  
+  
+
+  // Exercise 3: @each with Theme Days
+  $days: (
+    "Monday": #FFEB3B,
+    "Tuesday": #FF9800,
+    "Wednesday": #F44336,
+    "Thursday": #E91E63,
+    "Friday": #9C27B0,
+    "Saturday": #3F51B5,
+    "Sunday": #009688
+  );
+  
+  @each $day, $color in $days {
+    .day-#{$day} {
+      background-color: $color;
+      padding: 1rem;
+      margin: 10px 0;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+  }
+  
+  
+
+  // Exercise 4: @for loop for font weights
+  @for $i from 1 through 10 {
+    .font#{$i} {
+      font-weight: $i * 100;
+    }
+  }
+  
+  
+
+  // Exercise 5: Map for Basketball Teams
+  $teams: (
+    "UConn": #002654,
+    "Purdue": #CEB888,
+    "Alabama": #9E1B32,
+    "Houston": #C8102E
+  );
+  
+  @each $team, $color in $teams {
+    .team-#{$team} {
+      background-color: $color;
+      color: white;
+      padding: 0.5rem 1rem;
+      margin: 5px;
+      display: inline-block;
+      border-radius: 4px;
+    }
+  }
+  
+  
+
+  // Exercise 6: Challenge - Season Glyphs After Headings
+  $seasons: ("spring": "🌸", "summer": "🌞", "fall": "🍂", "winter": "❄️");
+  $season: "fall"; // Change this to set the season
+  
+  @mixin add-season-glyph($season-name) {
+    @each $name, $glyph in $seasons {
+      @if $name == $season-name {
+        &::after {
+          content: " #{$glyph}";
+        }
+      }
+    }
+  }
+  
+  h1, h2, h3, h4, h5 {
+    @include add-season-glyph($season);
+  }
+  

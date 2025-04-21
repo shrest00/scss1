@@ -1,0 +1,187 @@
+@charset "UTF-8";
+.btn-important {
+  font-size: 16px;
+  width: 150px;
+  background-color: #ffc107;
+  color: purple;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  display: inline-block;
+  margin: 5px;
+}
+
+.btn-secondary {
+  font-size: 14px;
+  width: 120px;
+  background-color: #17a2b8;
+  color: purple;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  display: inline-block;
+  margin: 5px;
+}
+
+h6 {
+  font-size: 100%;
+}
+
+h7 {
+  font-size: 110%;
+}
+
+h8 {
+  font-size: 120%;
+}
+
+h9 {
+  font-size: 130%;
+}
+
+h10 {
+  font-size: 140%;
+}
+
+.day-Monday {
+  background-color: #FFEB3B;
+  padding: 1rem;
+  margin: 10px 0;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.day-Tuesday {
+  background-color: #FF9800;
+  padding: 1rem;
+  margin: 10px 0;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.day-Wednesday {
+  background-color: #F44336;
+  padding: 1rem;
+  margin: 10px 0;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.day-Thursday {
+  background-color: #E91E63;
+  padding: 1rem;
+  margin: 10px 0;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.day-Friday {
+  background-color: #9C27B0;
+  padding: 1rem;
+  margin: 10px 0;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.day-Saturday {
+  background-color: #3F51B5;
+  padding: 1rem;
+  margin: 10px 0;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.day-Sunday {
+  background-color: #009688;
+  padding: 1rem;
+  margin: 10px 0;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.font1 {
+  font-weight: 100;
+}
+
+.font2 {
+  font-weight: 200;
+}
+
+.font3 {
+  font-weight: 300;
+}
+
+.font4 {
+  font-weight: 400;
+}
+
+.font5 {
+  font-weight: 500;
+}
+
+.font6 {
+  font-weight: 600;
+}
+
+.font7 {
+  font-weight: 700;
+}
+
+.font8 {
+  font-weight: 800;
+}
+
+.font9 {
+  font-weight: 900;
+}
+
+.font10 {
+  font-weight: 1000;
+}
+
+.team-UConn {
+  background-color: #002654;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.team-Purdue {
+  background-color: #CEB888;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.team-Alabama {
+  background-color: #9E1B32;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.team-Houston {
+  background-color: #C8102E;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+h1::after, h2::after, h3::after, h4::after, h5::after {
+  content: " 🍂";
+}/*# sourceMappingURL=practise.css.map */
